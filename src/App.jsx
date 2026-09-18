@@ -6,27 +6,25 @@ import About from './about/about'
 import WorkTogether from './workTogether/workTogether'
 import Footer from './footer/footer'
 import SignIn from './signin/signin'
-
+import './App.css'
 
 function App() {
   const [showSignIn, setShowSignIn] = useState(false)
 
-  if (showSignIn) {
-    return <SignIn onBack={() => setShowSignIn(false)} />
-  }
+  if (showSignIn) return <SignIn onBack={() => setShowSignIn(false)} />
 
   return (
     <>
       <Navbar onSignIn={() => setShowSignIn(true)} />
-      <Home />
-      <Services />
-      <About />
-   
-      <WorkTogether />
+      <main>
+        <Home />
+        <Services />
+        <About />
+        <WorkTogether />
+      </main>
       <Footer />
     </>
   )
 }
 
 export default App
-
