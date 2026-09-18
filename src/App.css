@@ -1,3 +1,4 @@
 #root { min-height: 100vh; }
 button, a, input, select { font: inherit; }
 button { -webkit-tap-highlight-color: transparent; }
+::selection { background: #e21b23; color: #fff; }
