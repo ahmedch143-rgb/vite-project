@@ -10,21 +10,7 @@ import './App.css'
 
 function App() {
   const [showSignIn, setShowSignIn] = useState(false)
-
   if (showSignIn) return <SignIn onBack={() => setShowSignIn(false)} />
-
-  return (
-    <>
-      <Navbar onSignIn={() => setShowSignIn(true)} />
-      <main>
-        <Home />
-        <Services />
-        <About />
-        <WorkTogether />
-      </main>
-      <Footer />
-    </>
-  )
+  return <><Navbar onSignIn={() => setShowSignIn(true)} /><main><Home /><Services /><About /><WorkTogether /></main><Footer /></>
 }
-
 export default App
