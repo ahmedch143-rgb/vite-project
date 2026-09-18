@@ -1,1 +1,3 @@
-
+#root { min-height: 100vh; }
+button, a, input, select { font: inherit; }
+button { -webkit-tap-highlight-color: transparent; }
